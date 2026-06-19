@@ -1,0 +1,23 @@
+{
+  "name": "TeamMessage",
+  "type": "object",
+  "properties": {
+    "sender_name": {
+      "type": "string",
+      "title": "Remetente"
+    },
+    "message": {
+      "type": "string",
+      "title": "Mensagem"
+    },
+    "patient_id": {
+      "type": "string",
+      "title": "ID do Paciente (opcional)"
+    },
+    "patient_code": {
+      "type": "string",
+      "title": "Código do Paciente"
+    }
+  },
+  "required": ["message", "sender_name"]
+}

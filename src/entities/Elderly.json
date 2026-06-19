@@ -1,0 +1,53 @@
+{
+  "name": "Elderly",
+  "type": "object",
+  "properties": {
+    "anonymous_code": {
+      "type": "string",
+      "title": "Código Anônimo",
+      "description": "Identificador anônimo gerado automaticamente"
+    },
+    "age": {
+      "type": "number",
+      "title": "Idade",
+      "minimum": 60,
+      "maximum": 120
+    },
+    "sex": {
+      "type": "string",
+      "title": "Sexo",
+      "enum": ["Masculino", "Feminino"]
+    },
+    "health_conditions": {
+      "type": "string",
+      "title": "Condições de Saúde",
+      "description": "Condições de saúde pré-existentes"
+    },
+    "allergies": {
+      "type": "string",
+      "title": "Alergias",
+      "description": "Alergias medicamentosas e alimentares conhecidas"
+    },
+    "family_history": {
+      "type": "string",
+      "title": "Histórico Familiar",
+      "description": "Histórico de doenças na família (pais, irmãos)"
+    },
+    "medications": {
+      "type": "string",
+      "title": "Medicamentos em Uso",
+      "description": "Lista de medicamentos em uso"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Observações"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": ["Ativo", "Inativo", "Concluído"],
+      "default": "Ativo"
+    }
+  },
+  "required": ["anonymous_code", "age", "sex"]
+}
